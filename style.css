@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1E0555;
+  }
+  
+  body, .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .container {
+    background-color: #F0DB4F;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #F0DB4F;
+    font-weight: bold;
+  }
+  
+  .quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+  }
+  
+  .quote-input {
+    background-color: transparent;
+    border: 2px solid #A1922E;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+  }
+  
+  .quote-input:focus {
+    border-color: black;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .resetButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Add some padding for a fancier look */
+    padding: 10px 20px;
+  
+    /* Add a background color */
+    background-color: #3498db;
+    /* Add some border-radius for rounded corners */
+    border-radius: 8px;
+    /* Add a box shadow for a subtle depth effect */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  
+    /* Add some text styles */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+  
+    /* Add a transition effect for a smoother appearance on hover */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add a different background color when hovering over the button */
+  .resetButton:hover {
+    background-color: #2980b9;
+    /* You can also add additional effects on hover, such as changing the box-shadow or font color */
+  }
+  
+  /* Add a style for when the button is clicked */
+  .resetButton:active {
+    background-color: #1a5276;
+    /* You can adjust the color to your preference */
+  }
